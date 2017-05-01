@@ -2,6 +2,7 @@ package arant.molly.inheritance;
 
 
 import arant.molly.inheritance.HumansAndSuperHumans.Human;
+import arant.molly.inheritance.HumansAndSuperHumans.SuperHuman;
 import arant.molly.inheritance.RotateArray.Rotation;
 
 import java.util.ArrayList;
@@ -27,6 +28,9 @@ public class Main
 
         Human molly= new Human ("Molly", 25, true, "Student", "123 Sesame Street");
         System.out.println(molly);
+
+        SuperHuman heroIdentity= new SuperHuman ("Molly", 25, true, "Student", "123 Sesame Street", true, "unknown", "telekenesis" );
+
     }
 
 }
