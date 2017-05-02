@@ -13,24 +13,25 @@ public class Main
         Rotation rotation = new Rotation();
 
 
-        ArrayList<Integer> numbers = new ArrayList();
-        numbers.add(1);
-        numbers.add(2);
-        numbers.add(3);
-        numbers.add(4);
-        numbers.add(5);
-        numbers.add(6);
+//        ArrayList<Integer> numbers = new ArrayList();
 
-        System.out.println("before rotate: " + numbers);
+        for (int i = 0; i < 7; i++) {
+            rotation.add(i);
 
-        System.out.println(rotation.rotate(numbers, 4));
+        }
+
+        System.out.println("Before rotate: " + rotation);
+
+
+        rotation.rotate(rotation, 2);
+
 
 
         Human molly= new Human ("Molly", 25, true, "Student", "123 Sesame Street");
         System.out.println(molly);
 
         SuperHuman heroIdentity= new SuperHuman ("Molly", 25, true, "Student", "123 Sesame Street", true, "unknown", "telekenesis" );
-
+        System.out.println(heroIdentity);
     }
 
 }
