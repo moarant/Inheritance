@@ -47,7 +47,7 @@ public class SuperHuman extends Human {
 
     @Override
     public String toString(){
-        return this.name + ", Superhero identity: "+ this.heroName +  this.age + ", female: " + this.isFemale + ", " + this.occupation+ ", " + this.address + ", Good? " + this.isGood +", "+ this.superAbility;
+        return this.name + ", Superhero identity: "+ this.heroName + ", " + this.age + ", female: " + this.isFemale + ", " + this.occupation+ ", " + this.address + ", Good? " + this.isGood +", "+ this.superAbility;
     }
 
 

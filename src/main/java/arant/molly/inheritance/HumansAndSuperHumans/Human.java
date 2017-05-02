@@ -10,6 +10,7 @@ public class Human {
 
     public Human (String name, int age, boolean isFemale, String occupation, String address) {
         this.name = name;
+        this.age= age;
         this.isFemale = isFemale;
         this.occupation = occupation;
         this.address = address;
