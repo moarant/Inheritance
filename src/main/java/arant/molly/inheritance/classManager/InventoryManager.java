@@ -1,4 +1,4 @@
-package arant.molly.inheritance.ClassManager;
+package arant.molly.inheritance.classManager;
 
 import java.util.ArrayList;
 

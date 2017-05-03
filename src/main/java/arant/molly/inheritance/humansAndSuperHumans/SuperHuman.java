@@ -1,4 +1,4 @@
-package arant.molly.inheritance.HumansAndSuperHumans;
+package arant.molly.inheritance.humansAndSuperHumans;
 
 /**
  * Created by mollyarant on 5/1/17.

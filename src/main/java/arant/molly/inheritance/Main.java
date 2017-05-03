@@ -1,11 +1,11 @@
 package arant.molly.inheritance;
 
 
-import arant.molly.inheritance.ClassManager.InventoryManager;
-import arant.molly.inheritance.ClassManager.Product;
-import arant.molly.inheritance.HumansAndSuperHumans.Human;
-import arant.molly.inheritance.HumansAndSuperHumans.SuperHuman;
-import arant.molly.inheritance.RotateArray.Rotation;
+import arant.molly.inheritance.classManager.InventoryManager;
+import arant.molly.inheritance.classManager.Product;
+import arant.molly.inheritance.humansAndSuperHumans.Human;
+import arant.molly.inheritance.humansAndSuperHumans.SuperHuman;
+import arant.molly.inheritance.rotateArray.Rotation;
 
 public class Main
 {

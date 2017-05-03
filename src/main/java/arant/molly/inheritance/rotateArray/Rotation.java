@@ -1,10 +1,6 @@
-package arant.molly.inheritance.RotateArray;
-
-import arant.molly.inheritance.Main;
+package arant.molly.inheritance.rotateArray;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 
 public class Rotation extends ArrayList {

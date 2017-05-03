@@ -1,4 +1,4 @@
-import arant.molly.inheritance.ClassManager.InventoryManager;
+import arant.molly.inheritance.classManager.InventoryManager;
 import org.junit.Assert;
 import org.junit.Test;
 

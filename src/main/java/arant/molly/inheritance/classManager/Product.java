@@ -1,4 +1,4 @@
-package arant.molly.inheritance.ClassManager;
+package arant.molly.inheritance.classManager;
 
 /**
  * Created by mollyarant on 5/2/17.
@@ -24,6 +24,7 @@ public class Product {
 
 
     public void setPrice(double price) {
+
         this.price= price;
     }
 
@@ -35,6 +36,7 @@ public class Product {
 
 
     public void setId(String id) {
+
         this.id= id;
     }
 
@@ -46,6 +48,7 @@ public class Product {
 
 
     public void setQuantity(double quantity) {
+
         this.quantity= quantity;
     }
 
