@@ -38,4 +38,17 @@ public class TestCheckingAccount {
         Assert.assertEquals("Should reduce the account balance", expectedResult,actualResult,0);
 
     }
+
+    @Test
+    public void testWithdrawalFromCheckingAccountIfGreaterThanBalance(){
+        //given
+        CheckingAccount accountBalance = new CheckingAccount();
+        double expectedResult = -1;
+
+        //when
+        double actualResult = accountBalance.withdrawalFromCheckingAccountBalance(14, 15);
+
+        //then
+        Assert.assertEquals("Should return a warning if there is not enough money in the account", expectedResult, actualResult,0);
+    }
 }

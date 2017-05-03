@@ -22,8 +22,11 @@ public class CheckingAccount extends Account{
         return newAccountBalance;
     }
 
-    public double withdrawalFromCheckingAccountBalance(double accountBalance, double withdrawlAmount){
-        double newAccountBalance = accountBalance -withdrawlAmount;
+    public double withdrawalFromCheckingAccountBalance(double accountBalance, double withdrawalAmount){
+        if(withdrawalAmount>accountBalance){
+            System.out.println("Warning: you have overdrawn your account");
+        }
+        double newAccountBalance = accountBalance -withdrawalAmount;
         return newAccountBalance;
     }
 }
