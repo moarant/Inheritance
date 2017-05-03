@@ -5,21 +5,26 @@ package arant.molly.inheritance.bankAccountManager;
  */
 public abstract class Account {
     String accountName;
-    double accountAmount;
+    double accountBalance;
 
-    public Account(String accountName, double accountAmount){
-        this.accountName= accountName;
-        this.accountAmount= accountAmount;
 
+    public double getAccountBalance(){
+        return this.accountBalance;
     }
 
-    public double getAccountAmount(){
-        return this.accountAmount;
+    public void setAccountBalance(double accountBalance){
+        this.accountBalance = accountBalance;
     }
 
-    public void setAccountAmount(double accountAmount){
-        this.accountAmount= accountAmount;
-    }
+//    public double depositToAccountBalance(double accountBalance, double x){
+//        double newAccountBalance = accountBalance +x;
+//        return newAccountBalance;
+//    };
+
+    //public abstract double withdrawalFromAccountBalance();
+
+
+
 
 
 }
