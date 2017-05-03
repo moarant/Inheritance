@@ -17,12 +17,13 @@ public class CheckingAccount extends Account{
     }
 
 
-    public double depositToCheckingAccountBalance(double accountBalance, double x){
-        double newAccountBalance = accountBalance +x;
+    public double depositToCheckingAccountBalance(double accountBalance, double depositAmount){
+        double newAccountBalance = accountBalance +depositAmount;
         return newAccountBalance;
-    };
+    }
 
-    public double withdrawalFromCheckingAccountBalance(){
-        ;
+    public double withdrawalFromCheckingAccountBalance(double accountBalance, double withdrawlAmount){
+        double newAccountBalance = accountBalance -withdrawlAmount;
+        return newAccountBalance;
     }
 }

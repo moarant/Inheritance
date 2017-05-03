@@ -22,4 +22,20 @@ public class TestCheckingAccount {
 
 
     }
+
+    @Test
+    public void testWithdrawalFromCheckingAccountBalance(){
+
+        //:given
+        CheckingAccount accountBalance =new CheckingAccount();
+        double expectedResult=55;
+
+        //: when
+        double actualResult = accountBalance.withdrawalFromCheckingAccountBalance(10, 5);
+
+        //: then
+
+        Assert.assertEquals("Should reduce the account balance", expectedResult,actualResult,0);
+
+    }
 }
