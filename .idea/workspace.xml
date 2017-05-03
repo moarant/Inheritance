@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="844c7733-f5d0-436c-add0-1d3fec419eb2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/arant/molly/inheritance/bankAccountManager/CheckingAccount.java" afterPath="$PROJECT_DIR$/src/main/java/arant/molly/inheritance/bankAccountManager/CheckingAccount.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestCheckingAccount.java" afterPath="$PROJECT_DIR$/src/test/java/TestCheckingAccount.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,8 +59,8 @@
       <file leaf-file-name="TestCheckingAccount.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestCheckingAccount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+            <state relative-caret-position="315">
+              <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -896,7 +894,7 @@
       <updated>1493666035001</updated>
       <workItem from="1493666041588" duration="12954000" />
       <workItem from="1493686206436" duration="1562000" />
-      <workItem from="1493746099989" duration="18224000" />
+      <workItem from="1493746099989" duration="18479000" />
     </task>
     <servers />
   </component>
@@ -928,12 +926,12 @@
     <history-entry file="TestCheckingAccount_testWithdrawalFromCheckingAccountBalance - 2017.05.03 at 11h 15m 17s.xml">
       <configuration name="TestCheckingAccount.testWithdrawalFromCheckingAccountBalance" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestInventoryManager - 2017.05.02 at 18h 49m 06s.xml">
-      <configuration name="TestInventoryManager" configurationId="JUnit" />
+    <history-entry file="TestCheckingAccount_testWithdrawalFromCheckingAccountBalance - 2017.05.03 at 11h 20m 29s.xml">
+      <configuration name="TestCheckingAccount.testWithdrawalFromCheckingAccountBalance" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32740000" />
+    <option name="totallyTimeSpent" value="32995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-332" y="-1039" width="1814" height="984" extended-state="0" />
@@ -949,7 +947,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.353139" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.353139" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1216,8 +1214,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestCheckingAccount.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="33" column="31" lean-forward="false" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

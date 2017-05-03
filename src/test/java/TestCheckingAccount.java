@@ -28,7 +28,7 @@ public class TestCheckingAccount {
 
         //:given
         CheckingAccount accountBalance =new CheckingAccount();
-        double expectedResult=55;
+        double expectedResult=5;
 
         //: when
         double actualResult = accountBalance.withdrawalFromCheckingAccountBalance(10, 5);
