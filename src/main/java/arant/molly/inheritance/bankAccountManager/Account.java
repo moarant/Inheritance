@@ -16,6 +16,16 @@ public abstract class Account {
         this.accountBalance = accountBalance;
     }
 
+    public abstract double depositToAccountBalance(double accountBalance);
+
+    public abstract double withdrawalFromAccountBalance(double accountBalance);
+
+
+    public abstract void createAccount(String accountType);
+
+    public abstract boolean closeAccount(String accountType);
+
+
 //    public double depositToAccountBalance(double accountBalance, double x){
 //        double newAccountBalance = accountBalance +x;
 //        return newAccountBalance;

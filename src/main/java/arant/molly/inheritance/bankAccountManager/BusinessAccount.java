@@ -5,15 +5,25 @@ package arant.molly.inheritance.bankAccountManager;
  */
 public class BusinessAccount extends Account {
 
-    public BusinessAccount(String accountName, double accountNumber) {
+    public BusinessAccount(String accountName, double accountBalance) {
         this.accountName = accountName;
         this.accountBalance = accountBalance;
 
     }
 
-    public BusinessAccount() {
 
+    public double depositToAccountBalance (double depositAmount){
+        double updatedAccountBalance = accountBalance + depositAmount;
+        return updatedAccountBalance;
     }
 
+
+    public double withdrawalFromAccountBalance(double withdrawalAmount){
+        if (accountBalance< withdrawalAmount){
+
+        }
+        double updatedAccountBalance = accountBalance -withdrawalAmount;
+        return updatedAccountBalance;
+    }
 
 }

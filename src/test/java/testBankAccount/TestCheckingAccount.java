@@ -12,11 +12,11 @@ public class TestCheckingAccount {
     @Test
     public void testDepositToCheckingAccountBalance(){
         //:given
-        CheckingAccount accountBalance = new CheckingAccount();
-        double expectedResult=20;
+        CheckingAccount accountBalance = new CheckingAccount("Name", 4);
+        double expectedResult=22;
 
         //: When
-        double actualResult= accountBalance.depositToCheckingAccountBalance(2, 18);
+        double actualResult= accountBalance.depositToAccountBalance(18);
 
         //: Then
 
@@ -29,11 +29,11 @@ public class TestCheckingAccount {
     public void testWithdrawalFromCheckingAccountBalance(){
 
         //:given
-        CheckingAccount accountBalance =new CheckingAccount();
+        CheckingAccount accountBalance =new CheckingAccount("Name", 10);
         double expectedResult=5;
 
         //: when
-        double actualResult = accountBalance.withdrawalFromCheckingAccountBalance(10, 5);
+        double actualResult = accountBalance.withdrawalFromAccountBalance(5);
 
         //: then
 
@@ -44,11 +44,11 @@ public class TestCheckingAccount {
     @Test
     public void testWithdrawalFromCheckingAccountIfGreaterThanBalance(){
         //given
-        CheckingAccount accountBalance = new CheckingAccount();
-        double expectedResult = -1;
+        CheckingAccount accountBalance = new CheckingAccount("Name", 10);
+        double expectedResult = -5;
 
         //when
-        double actualResult = accountBalance.withdrawalFromCheckingAccountBalance(14, 15);
+        double actualResult = accountBalance.withdrawalFromAccountBalance(15);
 
         //then
         Assert.assertEquals("Should return a warning if there is less money in the account than is being withdrawn", expectedResult, actualResult,0);
