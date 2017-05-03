@@ -1,3 +1,5 @@
+package arant.molly.inheritance.classManager;
+
 import arant.molly.inheritance.classManager.InventoryManager;
 import org.junit.Assert;
 import org.junit.Test;

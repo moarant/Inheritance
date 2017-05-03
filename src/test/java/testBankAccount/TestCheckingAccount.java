@@ -1,3 +1,5 @@
+package testBankAccount;
+
 import arant.molly.inheritance.bankAccountManager.CheckingAccount;
 import org.junit.Assert;
 import org.junit.Test;
@@ -49,6 +51,6 @@ public class TestCheckingAccount {
         double actualResult = accountBalance.withdrawalFromCheckingAccountBalance(14, 15);
 
         //then
-        Assert.assertEquals("Should return a warning if there is not enough money in the account", expectedResult, actualResult,0);
+        Assert.assertEquals("Should return a warning if there is less money in the account than is being withdrawn", expectedResult, actualResult,0);
     }
 }
