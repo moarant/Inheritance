@@ -61,17 +61,7 @@ public class TestCheckingAccount {
         Assert.assertEquals("Should return a warning if there is less money in the account than is being withdrawn", expectedResult, actualResult,0);
     }
 
-    @Test
-    public void testCloseAccount(){
-        //:given
 
-
-        //:when
-
-        //:then
-        Assert.assertTrue("Should return true",accountBalance2.closeAccount("Checking"));
-
-    }
 
 
 

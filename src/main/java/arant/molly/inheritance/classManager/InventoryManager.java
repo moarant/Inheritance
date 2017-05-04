@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class InventoryManager extends Product{
     ArrayList<Double> totalValue = new ArrayList();
 
-    public double calculateValueOfProduct(double quantity, double price){
+    public double calculateValueOfProduct( double quantity, double price){
         double valueOfSingleType = quantity *price;
         return valueOfSingleType;
     }

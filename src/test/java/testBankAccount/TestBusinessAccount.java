@@ -2,29 +2,54 @@ package testBankAccount;
 
 import arant.molly.inheritance.bankAccountManager.BusinessAccount;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Created by mollyarant on 5/3/17.
  */
 public class TestBusinessAccount {
+    BusinessAccount accountBalance;
+
+    @Before
+    public void setUp(){
+        accountBalance= new BusinessAccount("Name", 10);
+    }
+
 
     @Test
 
-    public void testDepositToBusinessAccountBalance() {
+    public void testDepositToBusinessAccountBalanceAboveMinimum() {
 
 
         //:given
-            BusinessAccount businessAccount = new BusinessAccount("Account", 2);
-            double expectedResult= 12;
+
+            double expectedResult= 120;
 
 
         //:when
-        businessAccount.depositToAccountBalance(10);
-        double actualResult= businessAccount.getAccountBalance();
+        double actualResult = accountBalance.depositToAccountBalance(110);
+
 
         //:then
-        Assert.assertEquals("This method should add to the balance of the business account", expectedResult, actualResult, 0);
+        Assert.assertEquals("This method should add to the balance of the business account", expectedResult,actualResult,0);
+    }
+
+    @Test
+
+    public void testDepositToBusinessAccountBalanceBelowMinimum() {
+
+
+        //:given
+
+        double expectedResult= 10;
+
+
+        //:when
+        double actualResult = accountBalance.depositToAccountBalance(30);
+
+        //:then
+        Assert.assertEquals("This method should reject add to the balance of the business account", expectedResult, actualResult, 0);
     }
 
     @Test
@@ -32,12 +57,10 @@ public class TestBusinessAccount {
 
 
         //given
-        BusinessAccount businessAccount= new BusinessAccount("Account", 10);
         double expectedResult=1;
 
         //:when
-        businessAccount.withdrawalFromAccountBalance(9);
-        double actualResult = businessAccount.getAccountBalance();
+        double actualResult = accountBalance.withdrawalFromAccountBalance(9);
 
         //:then
         Assert.assertEquals("This method should lower the account balance by the withdrawal amount", expectedResult, actualResult, 0);
@@ -47,12 +70,11 @@ public class TestBusinessAccount {
     public void testWithdrawalFromBusinessAccountBalanceIfLargerThanBalance(){
 
         //given
-        BusinessAccount businessAccount = new BusinessAccount("Account", 8);
+
         double expectedResult = -1;
 
         //:when
-        businessAccount.withdrawalFromAccountBalance(9);
-        double actualResult= businessAccount.getAccountBalance();
+        double actualResult = accountBalance.withdrawalFromAccountBalance(11);
 
         //:then
         Assert.assertEquals("Should return a negative balance and  warning of overdraft to user", expectedResult, actualResult, 0);

@@ -12,27 +12,29 @@ public class BusinessAccount extends Account {
     }
 
 
-    public void createAccount(String accountType){
-
-    }
-
-    public boolean closeAccount(String accountType){
-        return true;
-    }
 
 
 
     public double depositToAccountBalance (double depositAmount){
-        double updatedAccountBalance = accountBalance + depositAmount;
-        return updatedAccountBalance;
+        if (depositAmount>=100) {
+            double updatedAccountBalance = accountBalance += depositAmount;
+            return updatedAccountBalance;
+        }
+        else{
+            System.out.print("Business accounts require a minimum deposit of $100");
+            return accountBalance;
+
+
+
+        }
     }
 
 
     public double withdrawalFromAccountBalance(double withdrawalAmount){
-        if (accountBalance< withdrawalAmount){
-
+        if(withdrawalAmount>accountBalance){
+            System.out.println("Warning: you have overdrawn your account");
         }
-        double updatedAccountBalance = accountBalance -withdrawalAmount;
+        double updatedAccountBalance = accountBalance -= withdrawalAmount;
         return updatedAccountBalance;
     }
 
