@@ -21,17 +21,6 @@ public abstract class Account {
     public abstract double withdrawalFromAccountBalance(double withdrawalAmount);
 
 
-//    public abstract void createAccount(String accountType);
-//
-//    public abstract boolean closeAccount(String accountType);
-
-
-//    public double depositToAccountBalance(double accountBalance, double x){
-//        double newAccountBalance = accountBalance +x;
-//        return newAccountBalance;
-//    };
-
-    //public abstract double withdrawalFromAccountBalance();
 
 
 
