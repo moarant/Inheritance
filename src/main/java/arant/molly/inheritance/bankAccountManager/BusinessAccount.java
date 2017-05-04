@@ -12,6 +12,16 @@ public class BusinessAccount extends Account {
     }
 
 
+    public void createAccount(String accountType){
+
+    }
+
+    public boolean closeAccount(String accountType){
+        return true;
+    }
+
+
+
     public double depositToAccountBalance (double depositAmount){
         double updatedAccountBalance = accountBalance + depositAmount;
         return updatedAccountBalance;

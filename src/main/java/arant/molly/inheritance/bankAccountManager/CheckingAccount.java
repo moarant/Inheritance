@@ -1,9 +1,12 @@
 package arant.molly.inheritance.bankAccountManager;
 
+
 /**
  * Created by mollyarant on 5/3/17.
  */
 public class CheckingAccount extends Account{
+
+
 
     public CheckingAccount(String accountName, double accountBalance){
 
@@ -14,7 +17,13 @@ public class CheckingAccount extends Account{
 
 
     public void createAccount(String accountType){
-        
+
+    }
+
+    public boolean closeAccount(String accountType){
+
+
+        return false;
     }
 
 

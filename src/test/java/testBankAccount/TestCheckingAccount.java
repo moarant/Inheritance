@@ -2,17 +2,24 @@ package testBankAccount;
 
 import arant.molly.inheritance.bankAccountManager.CheckingAccount;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Created by mollyarant on 5/3/17.
  */
 public class TestCheckingAccount {
-
+    CheckingAccount accountBalance;
+    CheckingAccount accountBalance2;
+    @Before
+    public void setUp(){
+        accountBalance= new CheckingAccount("Name", 4);
+        accountBalance2= new CheckingAccount("Name", 10);
+    }
     @Test
     public void testDepositToCheckingAccountBalance(){
         //:given
-        CheckingAccount accountBalance = new CheckingAccount("Name", 4);
+
         double expectedResult=22;
 
         //: When
@@ -29,11 +36,11 @@ public class TestCheckingAccount {
     public void testWithdrawalFromCheckingAccountBalance(){
 
         //:given
-        CheckingAccount accountBalance =new CheckingAccount("Name", 10);
+
         double expectedResult=5;
 
         //: when
-        double actualResult = accountBalance.withdrawalFromAccountBalance(5);
+        double actualResult = accountBalance2.withdrawalFromAccountBalance(5);
 
         //: then
 
@@ -44,13 +51,28 @@ public class TestCheckingAccount {
     @Test
     public void testWithdrawalFromCheckingAccountIfGreaterThanBalance(){
         //given
-        CheckingAccount accountBalance = new CheckingAccount("Name", 10);
+
         double expectedResult = -5;
 
         //when
-        double actualResult = accountBalance.withdrawalFromAccountBalance(15);
+        double actualResult = accountBalance2.withdrawalFromAccountBalance(15);
 
         //then
         Assert.assertEquals("Should return a warning if there is less money in the account than is being withdrawn", expectedResult, actualResult,0);
     }
+
+    @Test
+    public void testCloseAccount(){
+        //:given
+
+
+        //:when
+
+        //:then
+        Assert.assertTrue("Should return true",accountBalance2.closeAccount("Checking"));
+
+    }
+
+
+
 }

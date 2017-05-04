@@ -20,8 +20,8 @@ public class TestBusinessAccount {
 
 
         //:when
-        double actualResult= businessAccount.depositToAccountBalance(10);
-
+        businessAccount.depositToAccountBalance(10);
+        double actualResult= businessAccount.getAccountBalance();
 
         //:then
         Assert.assertEquals("This method should add to the balance of the business account", expectedResult, actualResult, 0);
@@ -30,12 +30,14 @@ public class TestBusinessAccount {
     @Test
     public void testWithdrawalFromBusinessAccountBalance(){
 
+
         //given
         BusinessAccount businessAccount= new BusinessAccount("Account", 10);
         double expectedResult=1;
 
         //:when
-        double actualResult=businessAccount.withdrawalFromAccountBalance(9);
+        businessAccount.withdrawalFromAccountBalance(9);
+        double actualResult = businessAccount.getAccountBalance();
 
         //:then
         Assert.assertEquals("This method should lower the account balance by the withdrawal amount", expectedResult, actualResult, 0);
@@ -46,14 +48,19 @@ public class TestBusinessAccount {
 
         //given
         BusinessAccount businessAccount = new BusinessAccount("Account", 8);
-        double expectedResult = 1;
+        double expectedResult = -1;
 
         //:when
-        double actualResult= businessAccount.withdrawalFromAccountBalance(9);
+        businessAccount.withdrawalFromAccountBalance(9);
+        double actualResult= businessAccount.getAccountBalance();
 
         //:then
         Assert.assertEquals("Should return a negative balance and  warning of overdraft to user", expectedResult, actualResult, 0);
     }
+
+
+
+
 
 
 }
