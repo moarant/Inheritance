@@ -3,7 +3,7 @@ package arant.molly.inheritance.petsPolymorphism;
 /**
  * Created by mollyarant on 5/4/17.
  */
-public class Pet {
+public  class Pet {
     String petName;
     String petType;
 
@@ -37,5 +37,8 @@ public class Pet {
     }
 
 
-
+    public String speak(){
+        String greeting = "HELLO HUMAN!";
+        return greeting;
+    }
 }
