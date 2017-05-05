@@ -9,9 +9,13 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        PetFactory pet = new PetFactory();
+        PetFactory petFactory = new PetFactory();
 
-        pet.addPetsToList(pet.createPets());
+        petFactory.addPetsToList(petFactory.createPets());
+
+        for(Pet pet : petFactory.getPetList()) {
+            System.out.println(pet.speak());
+        }
 
     }
 

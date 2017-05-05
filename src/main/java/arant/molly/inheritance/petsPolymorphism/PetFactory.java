@@ -17,24 +17,36 @@ public class PetFactory {
 
 
     //TODO - Move this into a PetCreator.java class
-    Scanner petDescriber = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in);
 
     //TODO - Move this into a PetCreator.java class
     public Pet createPet() {
         System.out.println("What kind of pet?");
-        String typeOfPet = petDescriber.next();
+        String typeOfPet = scanner.next();
 
 
         System.out.println("What is your pet's name?");
-        String nameOfPet = petDescriber.next();
-        Pet pet = new Pet(nameOfPet, typeOfPet);
+        String nameOfPet = scanner.next();
+        Pet pet = new Pet(nameOfPet,typeOfPet);
+
+        if(typeOfPet.equals("Cat")){
+            pet = new Cat(nameOfPet, typeOfPet);
+        }
+        else if (typeOfPet.equals("Dog")){
+            pet = new Dog(nameOfPet, typeOfPet);
+        }
+        else if(typeOfPet.equals("Fish")){
+            pet = new Fish(nameOfPet,typeOfPet);
+        }
+
         return pet;
+
     }
 
     //TODO - Move this into a PetCreator.java class
     public Pet[] createPets() {
         System.out.println("How many pets would you like to create?");
-        int numberOfPets = petDescriber.nextInt();
+        int numberOfPets = scanner.nextInt();
         Pet[] pets = new Pet[numberOfPets];
         for (int i = 0; i < numberOfPets; i++) {
             Pet newPet = createPet();
@@ -52,6 +64,7 @@ public class PetFactory {
         System.out.println("Adding a new pet to the list...");
         System.out.println("The type of the pet is " + petType);
         System.out.println("The name of the pet is " + petName);
+        
 
         pets.add(pet);
     }
@@ -65,4 +78,8 @@ public class PetFactory {
     public ArrayList<Pet> getPetList() {
         return pets;
     }
-}
+
+
+    }
+
+
