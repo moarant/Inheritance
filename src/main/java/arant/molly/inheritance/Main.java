@@ -1,24 +1,17 @@
 package arant.molly.inheritance;
 
 
-import arant.molly.inheritance.bankAccountManager.*;
-import arant.molly.inheritance.classManager.InventoryManager;
-import arant.molly.inheritance.classManager.Product;
-import arant.molly.inheritance.humansAndSuperHumans.Human;
-import arant.molly.inheritance.humansAndSuperHumans.SuperHuman;
-import arant.molly.inheritance.petsPolymorphism.PetInformationGatherer;
-import arant.molly.inheritance.rotateArray.Rotation;
+import arant.molly.inheritance.petsPolymorphism.Pet;
+import arant.molly.inheritance.petsPolymorphism.PetFactory;
 
-public class Main
-{
-    public static void main( String[] args ) {
-        PetInformationGatherer petInformationGatherer = new PetInformationGatherer();
+import java.util.ArrayList;
 
-        LabResults.printLabResults();
+public class Main {
 
+    public static void main(String[] args) {
+        PetFactory pet = new PetFactory();
 
-
-
+        pet.addPetsToList(pet.createPets());
 
     }
 
