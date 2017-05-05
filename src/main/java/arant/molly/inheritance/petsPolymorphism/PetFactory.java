@@ -43,7 +43,7 @@ public class PetFactory {
 
     }
 
-    
+
     public Pet[] createPets() {
         System.out.println("How many pets would you like to create?");
         int numberOfPets = scanner.nextInt();
