@@ -13,6 +13,8 @@ public class Main {
 
         //comment out next line to hide results  from lab parts 1-4 results.
         LabResults.printLabResults();
+        System.out.println();
+
 
 
         petFactory.addPetsToList(petFactory.createPets());
