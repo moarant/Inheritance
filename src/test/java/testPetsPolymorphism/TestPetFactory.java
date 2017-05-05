@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 /**
  * Created by mollyarant on 5/4/17.
  */
-public class TestPetInformationGatherer {
+public class TestPetFactory {
     @Test
     public void addPetsToListTest() {
         // Given
