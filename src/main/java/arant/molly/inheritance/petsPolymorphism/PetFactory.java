@@ -16,10 +16,10 @@ public class PetFactory {
     ArrayList<Pet> pets = new ArrayList();
 
 
-    //TODO - Move this into a PetCreator.java class
+
     Scanner scanner = new Scanner(System.in);
 
-    //TODO - Move this into a PetCreator.java class
+
     public Pet createPet() {
         System.out.println("What kind of pet?");
         String typeOfPet = scanner.next();
@@ -43,7 +43,7 @@ public class PetFactory {
 
     }
 
-    //TODO - Move this into a PetCreator.java class
+    
     public Pet[] createPets() {
         System.out.println("How many pets would you like to create?");
         int numberOfPets = scanner.nextInt();
@@ -64,7 +64,7 @@ public class PetFactory {
         System.out.println("Adding a new pet to the list...");
         System.out.println("The type of the pet is " + petType);
         System.out.println("The name of the pet is " + petName);
-        
+
 
         pets.add(pet);
     }
